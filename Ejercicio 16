@@ -1,0 +1,27 @@
+Algoritmo NumerosHasta999
+	Definir num, suma, promedio Como Real
+	Definir cantidad Como Entero
+	
+	suma <- 0
+	cantidad <- 0
+	
+	Escribir "Ingrese un número (999 para finalizar):"
+	Leer num
+	
+	Mientras num <> 999 Hacer
+		suma <- suma + num
+		cantidad <- cantidad + 1
+		
+		Escribir "Ingrese un número (999 para finalizar):"
+		Leer num
+	FinMientras
+	
+	Si cantidad > 0 Entonces
+		promedio <- suma / cantidad
+		Escribir "Cantidad de números: ", cantidad
+		Escribir "Suma total: ", suma
+		Escribir "Promedio: ", promedio
+	SiNo
+		Escribir "No se ingresaron números válidos."
+	FinSi
+FinAlgoritmo
