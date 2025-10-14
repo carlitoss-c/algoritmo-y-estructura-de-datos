@@ -1,0 +1,17 @@
+Algoritmo ContarHastaMil
+	Definir n, suma, contador Como Entero
+	
+	suma <- 0
+	contador <- 0
+	
+	Mientras suma <= 1000 Hacer
+		Escribir "Ingrese un número:"
+		Leer n
+		
+		suma <- suma + n
+		contador <- contador + 1
+	FinMientras
+	
+	Escribir "Se ingresaron ", contador, " números."
+	Escribir "La suma final fue: ", suma
+FinAlgoritmo
