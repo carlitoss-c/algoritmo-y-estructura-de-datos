@@ -1,0 +1,14 @@
+Algoritmo TablaDeMultiplicar
+	// 1.Declarar variables
+	Definir num, i, resultado Como Entero
+	// 2.Entrada de datos
+	Escribir 'Ingrese un numero:'
+	Leer num
+	// 5.Repeticiones "Para"
+	Para i<-1 Hasta 10 Hacer
+		// 3. Proceso: calculo de cada multiplicacion
+		resultado <- num*i
+		// 6. Salida de Reulstados "mostrar cada linea de la tabla"
+		Escribir num, ' x ', i, ' = ', resultado
+	FinPara
+FinAlgoritmo
