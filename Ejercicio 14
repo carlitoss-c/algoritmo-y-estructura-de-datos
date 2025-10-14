@@ -1,0 +1,33 @@
+Algoritmo PersonaMasJoven
+	Definir N, i, edad, minEdad Como Entero
+	Definir nombre, minNombre Como Cadena
+	
+	Escribir "¿Cuántas personas va a ingresar?"
+	Leer N
+	
+	Si N > 0 Entonces
+		Escribir "Ingrese el nombre de la persona 1:"
+		Leer nombre
+		Escribir "Ingrese la edad de ", nombre, ":"
+		Leer edad
+		
+		minEdad <- edad
+		minNombre <- nombre
+		
+		Para i <- 2 Hasta N Hacer
+			Escribir "Ingrese el nombre de la persona ", i, ":"
+			Leer nombre
+			Escribir "Ingrese la edad de ", nombre, ":"
+			Leer edad
+			
+			Si edad < minEdad Entonces
+				minEdad <- edad
+				minNombre <- nombre
+			FinSi
+		FinPara
+		
+		Escribir "La persona más joven es ", minNombre, " con ", minEdad, " años."
+	Sino
+		Escribir "Debe ingresar un número de personas válido."
+	FinSi
+FinAlgoritmo
