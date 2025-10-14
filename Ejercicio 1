@@ -1,0 +1,25 @@
+Algoritmo MayorDe10
+	//declaramos variables
+	Definir i, n, mayor Como Entero
+	
+	//Entrada de datos
+	Escribir "Ingrese el Numero"
+	Leer n
+	
+	//Proceso inicial
+	mayor <- n // el primero lo tomo como referencia
+	
+	//Repeticiones "Para"
+	Para i <- 2 Hasta 10 Hacer
+		Escribir  "Ingrese un número"
+		Leer n
+		
+		//Decision "compara con el mayor actual"
+		Si n > mayor Entonces
+			mayor <- n		
+		FinSi
+	FinPara
+	
+	//Salida de resultados
+	Escribir "El Mayor es: ", mayor
+FinAlgoritmo
