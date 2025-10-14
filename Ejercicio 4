@@ -1,0 +1,17 @@
+Algoritmo NombresHastaFin
+	// 1.Declaracion de Variables
+	Definir nombre Como Cadena
+	// 2.Entrada de datos inicial
+	Escribir 'Ingrese un nombre (Escriba FIN para terminar)'
+	Leer nombre
+	// 5.Repeticiones "Mientras con centinela"
+	Mientras nombre<>'FIN' Hacer
+		// 6.Salida "podemos mostrar lo ingresado o simplemente seguir pidiendo"
+		Escribir 'Se ingreso: ', nombre
+		// Nueva entrada
+		Escribir 'Ingrese otro nombre (FIN para terminar)'
+		Leer nombre
+	FinMientras
+	// Mensaje FinAlgoritmo
+	Escribir 'Fin de la carga de nombres.'
+FinAlgoritmo
