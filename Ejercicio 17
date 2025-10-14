@@ -1,0 +1,21 @@
+Algoritmo ListaDeProductos
+	Definir producto Como Cadena
+	Definir precio, total Como Real
+	
+	total <- 0
+	
+	Escribir "Ingrese el nombre del producto (escriba fin para terminar):"
+	Leer producto
+	
+	Mientras producto <> "fin" Hacer
+		Escribir "Ingrese el precio de " + producto + ":"
+		Leer precio
+		
+		total <- total + precio
+		
+		Escribir "Ingrese el nombre del siguiente producto (escriba fin para terminar):"
+		Leer producto
+	FinMientras
+	
+	Escribir "El total a pagar es: $" , total
+FinAlgoritmo
