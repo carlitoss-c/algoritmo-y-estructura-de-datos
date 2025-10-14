@@ -1,0 +1,29 @@
+Algoritmo MayorYMenor
+	Definir n, mayor, menor Como Entero
+	Definir primero Como Lógico
+	primero <- Verdadero
+	Escribir 'Ingrese un número (-1 para terminar):'
+	Leer n
+	Mientras n<>-1 Hacer
+		Si primero Entonces
+			mayor <- n
+			menor <- n
+			primero <- Falso
+		SiNo
+			Si n>mayor Entonces
+				mayor <- n
+			FinSi
+			Si n<menor Entonces
+				menor <- n
+			FinSi
+		FinSi
+		Escribir 'Ingrese otro número (-1 para terminar):'
+		Leer n
+	FinMientras
+	Si primero Entonces
+		Escribir 'No se ingresaron números válidos.'
+	SiNo
+		Escribir 'El mayor ingresado fue: ', mayor
+		Escribir 'El menor ingresado fue: ', menor
+	FinSi
+FinAlgoritmo
