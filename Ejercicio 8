@@ -1,0 +1,23 @@
+Algoritmo ContarMayoresMenores
+	Definir edad, menores, mayores Como Entero
+	
+	menores <- 0
+	mayores <- 0
+	
+	Escribir "Ingrese la edad (0 para terminar):"
+	Leer edad
+	
+	Mientras edad <> 0 Hacer
+		Si edad < 18 Entonces
+			menores <- menores + 1
+		Sino
+			mayores <- mayores + 1
+		FinSi
+		
+		Escribir "Ingrese otra edad (0 para terminar):"
+		Leer edad
+	FinMientras
+	
+	Escribir "Cantidad de menores: ", menores
+	Escribir "Cantidad de mayores: ", mayores
+FinAlgoritmo
