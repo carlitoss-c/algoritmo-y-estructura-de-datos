@@ -1,0 +1,24 @@
+Algoritmo SueldosMaxMin
+	Definir i, sueldo, mayor, menor Como Real
+	
+	Escribir "Ingrese el sueldo del empleado 1:"
+	Leer sueldo
+	
+	mayor <- sueldo
+	menor <- sueldo
+	
+	Para i <- 2 Hasta 20 Hacer
+		Escribir "Ingrese el sueldo del empleado ", i, ":"
+		Leer sueldo
+		
+		Si sueldo > mayor Entonces
+			mayor <- sueldo
+		FinSi
+		Si sueldo < menor Entonces
+			menor <- sueldo
+		FinSi
+	FinPara
+	
+	Escribir "El sueldo más alto es: ", mayor
+	Escribir "El sueldo más bajo es: ", menor
+FinAlgoritmo
